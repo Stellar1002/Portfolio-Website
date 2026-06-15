@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stellar Hub Portfolio</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.navbar{
+    background-color:white;
+    padding:15px 50px;
+}
+
+.navbar-brand{
+    font-size:28px;
+    font-weight:bold;
+    color:orangered !important;
+}
+
+.nav-link{
+    margin-left:15px;
+    color:black !important;
+}
+
+.contact-btn{
+    background-color:orangered;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+}
+
+
+
+.hero{
+    background-color:#0f172a;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:80px 70px;
+    min-height:85vh;
+}
+
+.text{
+    flex:1;
+}
+
+.text h1{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.text h3{
+    color:orangered;
+    margin-bottom:20px;
+}
+
+.text p{
+    font-size:18px;
+    line-height:1.8;
+    max-width:550px;
+    margin-bottom:25px;
+}
+
+.hire-btn{
+    background-color:orangered;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+}
+
+.project-btn{
+    background-color:transparent;
+    color:white;
+    border:2px solid white;
+    padding:12px 25px;
+    border-radius:5px;
+    margin-left:10px;
+}
+
+.image{
+    flex:1;
+    text-align:center;
+}
+
+.image img{
+    width:350px;
+    max-width:100%;
+    border-radius:20px;
+}
+
+
+
+.about{
+    text-align:center;
+    padding:70px 30px;
+    background-color:#f4f4f4;
+}
+
+.about h2{
+    color:orangered;
+    margin-bottom:20px;
+}
+
+.about p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.learn-btn{
+    margin-top:25px;
+    background-color:#0f172a;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+}
+
+
+
+.service-title{
+    text-align:center;
+    color:orangered;
+    margin-top:60px;
+    margin-bottom:40px;
+}
+
+.services{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:20px;
+}
+
+.card-service{
+    width:350px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    border-radius:10px;
+    overflow:hidden;
+    background:white;
+}
+
+.card-service img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card-content h3{
+    margin-bottom:10px;
+}
+
+.card-content p{
+    line-height:1.7;
+}
+
+.btn-group{
+    margin-top:20px;
+}
+
+.learn-more{
+    background-color:#0f172a;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+}
+
+.contact-service{
+    background-color:orangered;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    margin-left:10px;
+}
+
+
+
+.portfolio{
+    text-align:center;
+    padding:70px 30px;
+}
+
+.portfolio h2{
+    color:orangered;
+    margin-bottom:20px;
+}
+
+.portfolio p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+
+
+.contact{
+    background-color:#0f172a;
+    color:white;
+    text-align:center;
+    padding:70px 30px;
+}
+
+.contact h2{
+    color:orangered;
+    margin-bottom:20px;
+}
+
+.contact p{
+    max-width:600px;
+    margin:auto;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.contact-home-btn{
+    background-color:orangered;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+}
+
+
+
+.footer{
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+
+
+@media(max-width:768px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.text h1{
+    font-size:40px;
+   
+}
+.image{
+    margin-top: 50px;
+}
+.services{
+    flex-direction:column;
+    align-items:center;
+}
+
+.navbar{
+    padding:15px;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+
+
+<nav class="navbar navbar-expand-lg">
+
+<div class="container-fluid">
+
+<a class="navbar-brand" href="#">Stellar Dev</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse" id="navbarNav">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="#">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Services</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Portfolio</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Contact</a>
+</li>
+
+</ul>
+
+<button class="contact-btn ms-3">Contact Now</button>
+
+</div>
+
+</div>
+
+</nav>
+
+
+
+<div class="hero">
+
+<div class="text">
+
+<h1>Hi, I'm Stellar Dev</h1>
+
+<h3>Web Designer & Digital Marketer</h3>
+
+<p>
+I help businesses establish a strong online presence through modern,
+responsive websites and effective digital marketing strategies that
+attract customers, increase visibility and support business growth.
+</p>
+
+<button class="hire-btn">Hire Me</button>
+<button class="project-btn">View Projects</button>
+
+</div>
+
+<div class="image">
+
+<img src="Untitled design (16).png" alt="Stellar Hub">
+
+</div>
+
+</div>
+
+
+
+<div class="about">
+
+<h2>About Stellar Dev</h2>
+
+<p>
+Stellar Dev is a professional web designer and digital marketer dedicated
+to helping businesses build a strong online presence. Through responsive
+web design and strategic digital marketing, I create solutions that help
+brands connect with their audience and achieve their business goals.
+</p>
+
+<button class="learn-btn">Learn More</button>
+
+</div>
+
+
+
+<h2 class="service-title">Our Services</h2>
+
+<div class="services">
+
+<div class="card-service">
+
+<img src="d720afa98ae9c3196f006896503ca5c5.jpg" alt="Web Development">
+
+<div class="card-content">
+
+<h3>Web Development</h3>
+
+<p>
+I design modern, responsive and mobile-friendly websites that provide
+an excellent user experience across all devices.
+</p>
+
+<div class="btn-group">
+
+<button class="learn-more">Learn More</button>
+
+<button class="contact-service">Contact Me</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="card-service">
+
+<img src="maxresdefault (3).jpg" alt="Digital Marketing">
+
+<div class="card-content">
+
+<h3>Digital Marketing</h3>
+
+<p>
+I help businesses grow online through social media marketing,
+content creation, lead generation and advertising campaigns.
+</p>
+
+<div class="btn-group">
+
+<button class="learn-more">Learn More</button>
+
+<button class="contact-service">Contact Me</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="portfolio">
+
+<h2>Portfolio</h2>
+
+<p>
+Here are some of the projects I have worked on, showcasing my skills
+in web design, responsive development and digital marketing solutions.
+</p>
+
+</div>
+
+
+
+<div class="contact">
+
+<h2>Let's Work Together</h2>
+
+<p>
+Ready to grow your business online? Contact me today for professional
+web design and digital marketing services.
+</p>
+
+<button class="contact-home-btn">Get In Touch</button>
+
+</div>
+
+
+
+<div class="footer">
+
+<h3>Stellar Dev</h3>
+
+<p>Web Designer & Digital Marketer</p>
+
+<p>© 2026 Stellar Dev. All Rights Reserved.</p>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
