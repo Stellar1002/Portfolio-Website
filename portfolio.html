@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | Stellar Dev</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+.navbar{
+    background:white;
+    padding:15px 50px;
+}
+
+.navbar-brand{
+    color:orangered ;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.nav-link{
+    margin-left:15px;
+    color:black ;
+}
+
+.contact-btn{
+    background:orangered;
+    color:white;
+    text-decoration:none;
+    padding:10px 20px;
+    border-radius:5px;
+}
+
+
+
+.hero{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero h1{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+
+
+.portfolio{
+    padding:80px 50px;
+}
+
+.section-title{
+    text-align:center;
+    color:orangered;
+    margin-bottom:50px;
+}
+
+.portfolio-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.portfolio-card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.portfolio-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.portfolio-content{
+    padding:20px;
+}
+
+.portfolio-content h3{
+    margin-bottom:10px;
+}
+
+.portfolio-content p{
+    line-height:1.7;
+    margin-bottom:20px;
+}
+
+.project-btn{
+    background:#0f172a;
+    color:white;
+    text-decoration:none;
+    padding:10px 20px;
+    border-radius:5px;
+    display:inline-block;
+}
+
+
+
+.cta{
+    background:#f4f4f4;
+    text-align:center;
+    padding:80px 30px;
+}
+
+.cta h2{
+    color:orangered;
+    margin-bottom:20px;
+}
+
+.cta-btn{
+    background:orangered;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:5px;
+    display:inline-block;
+}
+
+
+
+.footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:40px;
+}
+
+.portfolio-container{
+    grid-template-columns:1fr;
+}
+
+.navbar{
+    padding:15px;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+
+<div class="container-fluid">
+
+<a class="navbar-brand" href="#">Stellar Dev</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarNav">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="about.html">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="services.html">Services</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active" href="portfolio.html">Portfolio</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="contact.html">Contact</a>
+</li>
+
+</ul>
+
+<a href="contact.html" class="contact-btn ms-3">Contact Now</a>
+
+</div>
+
+</div>
+
+</nav>
+
+<section class="hero">
+
+<h1>My Portfolio</h1>
+
+<p>
+A collection of projects that showcase my skills in web design, responsive layouts, and digital marketing.
+</p>
+
+</section>
+
+<section class="portfolio">
+
+<h2 class="section-title">Featured Projects</h2>
+
+<div class="portfolio-container">
+
+<div class="portfolio-card">
+
+<img src="survey form.png" alt="Survey Form">
+
+<div class="portfolio-content">
+
+<h3>Survey Form Website</h3>
+
+<p>
+A modern and responsive survey form designed using HTML and CSS with a clean user interface.
+</p>
+
+<a href="https://stellar1002.github.io/survey-form-page/" class="project-btn" target="_blank">
+View Project
+</a>
+
+</div>
+
+</div>
+
+<div class="portfolio-card">
+
+<img src="sample 2.png" alt="Portfolio Website">
+
+<div class="portfolio-content">
+
+<h3>Personal Portfolio Website</h3>
+
+<p>
+A responsive portfolio website built with HTML, CSS and Bootstrap to showcase professional skills and projects.
+</p>
+
+<a href="https://stellar1002.github.io/sample-1/" class="project-btn" target="_blank">
+View Project
+</a>
+
+</div>
+
+</div>
+
+<div class="portfolio-card">
+
+<img src="flowers.png" alt="Product Card">
+
+<div class="portfolio-content">
+
+<h3>Responsive Product Card</h3>
+
+<p>
+A responsive product card layout developed using CSS Grid and Flexbox principles.
+</p>
+
+<a href="https://stellar1002.github.io/card/" class="project-btn" target="_blank">
+View Project
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<h2>Interested In Working Together?</h2>
+
+<p>Let's build something amazing for your business.</p>
+
+<br>
+
+<a href="contact.html" class="cta-btn">
+Contact Me
+</a>
+
+</section>
+
+<footer class="footer">
+
+<h3>Stellar Dev</h3>
+
+<p>Web Designer & Digital Marketer</p>
+
+<p>© 2026 Stellar Dev. All Rights Reserved.</p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
