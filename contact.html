@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Stellar Dev</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+.navbar{
+    background:white;
+    padding:15px 50px;
+}
+
+.navbar-brand{
+    color:orangered ;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.nav-link{
+    margin-left:15px;
+    color:black;
+}
+
+.contact-btn{
+    background:orangered;
+    color:white;
+    text-decoration:none;
+    padding:10px 20px;
+    border-radius:5px;
+}
+
+
+
+.hero{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero h1{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+
+
+.contact-section{
+    padding:80px 50px;
+}
+
+.contact-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+.contact-info{
+    background:#f4f4f4;
+    padding:30px;
+    border-radius:10px;
+}
+
+.contact-info h2{
+    color:orangered;
+    margin-bottom:20px;
+}
+
+.contact-info p{
+    line-height:1.8;
+    margin-bottom:15px;
+}
+
+.contact-form{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-form h2{
+    color:orangered;
+    margin-bottom:20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:5px;
+}
+
+.contact-form textarea{
+    height:150px;
+    resize:none;
+}
+
+.send-btn{
+    background:orangered;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+}
+
+
+
+.cta{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:70px 30px;
+}
+
+.cta h2{
+    margin-bottom:15px;
+}
+
+
+
+.footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:40px;
+}
+
+.contact-container{
+    grid-template-columns:1fr;
+}
+
+.navbar{
+    padding:15px;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+
+
+<nav class="navbar navbar-expand-lg">
+
+<div class="container-fluid">
+
+<a class="navbar-brand" href="#">Stellar Dev</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse" id="navbarNav">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="about.html">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="services.html">Services</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="portfolio.html">Portfolio</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active" href="contact.html">Contact</a>
+</li>
+
+</ul>
+
+<a href="contact.html" class="contact-btn ms-3">Contact Now</a>
+
+</div>
+
+</div>
+
+</nav>
+
+
+
+<section class="hero">
+
+<h1>Contact Me</h1>
+
+<p>
+Let's discuss your project and create something amazing together.
+</p>
+
+</section>
+
+
+
+<section class="contact-section">
+
+<div class="contact-container">
+
+<div class="contact-info">
+
+<h2>Get In Touch</h2>
+
+<p><strong>Email:</strong> stellardigitalz35@gmail.com</p>
+
+<p><strong>Phone:</strong> +234 8168483612</p>
+
+<p><strong>Location:</strong> Nigeria</p>
+
+<p>
+I'm available for web design, digital marketing, portfolio websites,
+business websites, and other creative projects.
+</p>
+
+</div>
+
+<div class="contact-form">
+
+<h2>Send A Message</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<input type="text" placeholder="Subject">
+
+<textarea placeholder="Your Message"></textarea>
+
+<button type="submit" class="send-btn">
+Send Message
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="cta">
+
+<h2>Ready To Start Your Project?</h2>
+
+<p>
+Let's work together to bring your ideas to life.
+</p>
+
+</section>
+
+
+
+<footer class="footer">
+
+<h3>Stellar Dev</h3>
+
+<p>Web Designer & Digital Marketer</p>
+
+<p>© 2026 Stellar Dev. All Rights Reserved.</p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
